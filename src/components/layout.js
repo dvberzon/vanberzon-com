@@ -35,6 +35,7 @@ class Layout extends React.Component {
         <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
+            fontWeight: 600,
             marginTop: 0,
           }}
         >
