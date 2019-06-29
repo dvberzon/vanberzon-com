@@ -54,11 +54,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        The thoughts of <strong>{author}</strong>, Brighton based front end developer who is a luddite and heart and wishes everything was simpler.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          {`@${social.twitter}`}
         </a>
       </p>
     </div>
