@@ -1,6 +1,21 @@
 import Typography from 'typography'
 import fairyGatesTheme from 'typography-theme-fairy-gates'
 
+fairyGatesTheme.baseFontSize = '21px'
+fairyGatesTheme.baseLineHeight = 1.4;
+fairyGatesTheme.overrideThemeStyles = () => ({
+  a: {
+    color: "#a94cb9",
+    textShadow: 'none',
+    backgroundImage: 'none',
+    textDecoration: 'none'
+  },
+  "a:hover": {
+    textDecoration: 'underline',
+  }
+});
+
+
 const typography = new Typography(fairyGatesTheme)
 
 // Hot reload typography in development.

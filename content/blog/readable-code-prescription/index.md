@@ -19,7 +19,7 @@ What are prescriptive rules? How can we avoid them? And are there better alterna
 ## Description vs Prescription
 ![Grammar](./grammar.jpg)
 
-Ever since I read "[The language instinct](https://www.amazon.co.uk/Language-Instinct-Creates-Penguin-Science-ebook/dp/B002RI9DJW/ref=sr_1_1?ie=UTF8&qid=1547309336&sr=8-1&keywords=the+language+instinct)" by Stephen Pinker, I have been fascinated by the difference between prescriptive and descriptive grammar. The grammar rules taught in school and policed by copy editors are prescriptive rules. These are rules that prescribe the way that people should speak, and people who don’t follow them are judged to be using the language incorrectly. Here are some examples you may have come across.
+Ever since I read ["The language instinct"](https://www.amazon.co.uk/Language-Instinct-Creates-Penguin-Science-ebook/dp/B002RI9DJW/ref=sr_1_1?ie=UTF8&qid=1547309336&sr=8-1&keywords=the+language+instinct) by Stephen Pinker, I have been fascinated by the difference between prescriptive and descriptive grammar. The grammar rules taught in school and policed by copy editors are prescriptive rules. These are rules that prescribe the way that people should speak, and people who don’t follow them are judged to be using the language incorrectly. Here are some examples you may have come across.
 
 - Saying "From whom is that?" instead of "Who is that from?", as you should not end a sentence with a preposition.
 - Saying "To go boldly" instead of "To boldly go", as you should not split an infinitive.
