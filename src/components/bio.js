@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        The thoughts of <strong>{author}</strong>, a Brighton based front end developer who is a luddite and heart and wishes everything was simpler.
+        The thoughts of <strong>{author}</strong>, a Brighton-based front-end developer who is a luddite and heart and wishes everything was simpler.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           {`@${social.twitter}`}
