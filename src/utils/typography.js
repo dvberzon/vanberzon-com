@@ -5,7 +5,7 @@ fairyGatesTheme.baseFontSize = '21px'
 fairyGatesTheme.baseLineHeight = 1.4;
 fairyGatesTheme.overrideThemeStyles = () => ({
   a: {
-    color: "#a94cb9",
+    color: "#9c44ab",
     textShadow: 'none',
     backgroundImage: 'none',
     textDecoration: 'none'
