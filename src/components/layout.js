@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { LogoSvg } from "./logo.svg"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -22,11 +23,10 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: "#b89dbd",
             }}
             to={`/`}
           >
-            {title}
+            <LogoSvg />
           </Link>
         </h1>
       )
@@ -43,11 +43,10 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: "#b89dbd",
             }}
             to={`/`}
           >
-            {title}
+            <LogoSvg small/>
           </Link>
         </h3>
       )
@@ -64,9 +63,9 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()},
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="mailto:info@vanberzon.com">Daniel van Berzon</a>
         </footer>
       </div>
     )
