@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from "gatsby"
 
 const NavBar = () => (
-  <div>This is a nav</div>
+  <div>
+    <Link to={'/'}>Home</Link> | About | Talks | Readability
+  </div>
 );
 
 export default NavBar;

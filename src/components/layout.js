@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { LogoSvg } from "./logo.svg"
+import NavBar from "./navbar"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -12,43 +13,47 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
+              ...scale(1.5),
+              marginBottom: rhythm(1.5),
+              marginTop: 0,
             }}
-            to={`/`}
           >
-            <LogoSvg />
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+              }}
+              to={`/`}
+            >
+              <LogoSvg />
+            </Link>
+          </h1>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            fontWeight: 600,
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <div style={{display: 'flex'}}>
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
+              fontFamily: `Montserrat, sans-serif`,
+              fontWeight: 600,
+              marginTop: 0,
+              marginRight: 'auto',
             }}
-            to={`/`}
           >
-            <LogoSvg small/>
-          </Link>
-        </h3>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+              }}
+              to={`/`}
+            >
+              <LogoSvg small/>
+            </Link>
+          </h3>
+          <NavBar />
+        </div>
       )
     }
     return (
