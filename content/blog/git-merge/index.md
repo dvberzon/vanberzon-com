@@ -3,7 +3,7 @@ title: Git Merge - Are you branching up the wrong tree?
 date: "2018-03-19"
 description: Merging branches in Git is a core part of my development workflow. But it doesn't work how I thought it did, and how it does work is ingenious.
 ---
-At Ocasta we have a diverse group of developers working with a variety of languages and technologies. Each of us works day-to-day with some combination of Swift, Go, JavaScript, Java, Kotlin, Ruby, HTML, or CSS, to name a few. But the one thing we have in common is that every day we find ourselves using [Git](https://git-scm.com/).
+At [Ocasta](https://ocasta.com) we have a diverse group of developers working with a variety of languages and technologies. Each of us works day-to-day with some combination of Swift, Go, JavaScript, Java, Kotlin, Ruby, HTML, or CSS, to name a few. But the one thing we have in common is that every day we find ourselves using [Git](https://git-scm.com/).
 
 All of our projects use Git for code storage and to help collaboration. We use Bitbucket as a hosted service, partly because of its tight integration with Jira for task management, and our workflow involves code reviews on pull requests based on Git branches. As with any tool that you use every day, some of us understand it just enough to get by, while others (such as [David](https://dcrichards.com/) and myself) are Git Geeks.
 
