@@ -13,15 +13,12 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-          <h1
-            style={{
-              ...scale(1.5),
-              marginBottom: rhythm(1.5),
-              marginTop: 0,
-            }}
-          >
+        <header>
+          <h1>
             <Link
               style={{
+                ...scale(1.5),
+                marginBottom: rhythm(2),
                 boxShadow: `none`,
                 textDecoration: `none`,
               }}
@@ -30,30 +27,19 @@ class Layout extends React.Component {
               <LogoSvg />
             </Link>
           </h1>
+        </header>
       )
     } else {
       header = (
-        <div style={{display: 'flex'}}>
-          <h3
-            style={{
-              fontFamily: `Montserrat, sans-serif`,
-              fontWeight: 600,
-              marginTop: 0,
-              marginRight: 'auto',
-            }}
+        <header className="header-small">
+          <Link
+            className="logo"
+            to={`/`}
           >
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-              }}
-              to={`/`}
-            >
-              <LogoSvg small/>
-            </Link>
-          </h3>
-          <NavBar />
-        </div>
+            <LogoSvg small/>
+          </Link>
+          <NavBar path={location.pathname}/>
+        </header>
       )
     }
     return (
@@ -65,7 +51,7 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        {header}
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()},

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 
 const TalksPage = ({location}) => (
-  <Layout location={location} title="Hi">
+  <Layout location={location} title="Talks">
     <h1>Talks</h1>
     <p>I am actively seaking opportunities to speak at Tech Conferences
     or meetups. Subjects range from code methodologies and readability to 

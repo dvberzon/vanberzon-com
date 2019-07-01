@@ -18,6 +18,7 @@ class BlogIndex extends React.Component {
         <SEO title="All posts" />
         <Bio />
         <NavBar />
+        <hr className="divider"/>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

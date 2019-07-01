@@ -1,8 +1,8 @@
 import Typography from 'typography'
 import fairyGatesTheme from 'typography-theme-fairy-gates'
 
-fairyGatesTheme.baseFontSize = '21px'
-fairyGatesTheme.baseLineHeight = 1.4;
+fairyGatesTheme.baseFontSize = '18px'
+fairyGatesTheme.baseLineHeight = 1.5;
 fairyGatesTheme.overrideThemeStyles = () => ({
   a: {
     color: "#9c44ab",
