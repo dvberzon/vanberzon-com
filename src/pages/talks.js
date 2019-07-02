@@ -34,16 +34,22 @@ const TalksPage = ({location}) => (
       on the subject, and what there is can be very dogmatic and contradictory. 
       In this talk, I attempt to tackle the issue by learning from the worlds of
       Linguistics and UX, which have successfully solved similar problems. I present
-      the initial findings from my readability experiment at
-      <a href="http://howreadable.com">howreadable.com</a>.
+      the initial findings from my readability experiment at <a href="http://howreadable.com">howreadable.com</a>.
     </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dlczTNFHpww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe 
+      title="Useable Grammatical and Readable Code - Async Brighton Dec 2018"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dlczTNFHpww"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    />
 
     <h3>Random Thoughts</h3>
     <cite>Fri 6th July 2018 - <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Brighton Ruby</a></cite>
     <p>How a single line of ruby code, the flip of a coin and some bad luck lead to an understanding of how random numbers really work, and why fairness isn’t always the best policy.</p>
     <p>
-      <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Watch the video 👀</a>
+      <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Watch the video <span role="img" aria-label="watch">👀</span></a>
     </p>
     
   </Layout>

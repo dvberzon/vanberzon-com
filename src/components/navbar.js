@@ -9,7 +9,7 @@ const navLinks = [
 ]
 
 const NavLink = ({ link, path}) => {
-  const active = link.home ? !path : link.route == path;
+  const active = link.home ? !path : link.route === path;
   return (
     <li className={active ? 'active' : ''}>
       <Link to={link.route}>
