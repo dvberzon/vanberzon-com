@@ -23,7 +23,7 @@ const NavBar = ({ small, path }) => (
   <nav className={`main-nav ${ small ? '--small' : ''}`}>
     <ul>
       {navLinks.map((link) => (
-        <NavLink link={link} path={path} />
+        <NavLink link={link} path={path} key={link.route} />
       ))}
     </ul>
   </nav>

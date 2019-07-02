@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     // split content into posts and pages based on collection
     const content = {
-      posts: [],
+      blog: [],
       pages: [],
     }
     result.data.allMarkdownRemark.edges.forEach((edge) => {
@@ -45,14 +45,14 @@ exports.createPages = ({ graphql, actions }) => {
       }
     })
 
+    const posts = content.blog
     // generate the posts
-    content.posts.forEach((post, index) => {
+    posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
-
       createPage({
         path: post.node.fields.slug,
-        component: blogComponent,
+        component: pageComponent,
         context: {
           slug: post.node.fields.slug,
           previous,
