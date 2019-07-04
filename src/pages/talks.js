@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 const TalksPage = ({location}) => (
   <Layout location={location} title="Talks">
     <h1>Talks</h1>
-    <p>I am actively seaking opportunities to speak at Tech Conferences
+    <p>Daniel is actively seaking opportunities to speak at Tech Conferences
     or meetups. Subjects range from code methodologies and readability to 
     specific technologies. Below are some examples of previous talks as well
     as any programmed future appearances.</p>
@@ -14,7 +14,7 @@ const TalksPage = ({location}) => (
     <p>Git is not complicated, but it is complex (and confusing). In this talk I explain the 
     basic building blocks of git: commits, blobs, trees and refs. I then build up, past branches and merges
     to remotes and rebases in an attempt to demystify the tool we all rely on.</p>
-    <h3>Readable code - available without prescription</h3>
+    <h3>Readable code - Available without Prescription</h3>
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/">HalfStack Conference London</a></cite>
     <p>This talk tells the story of a revolution in the world of linguistics 
     and how we can apply it to software development. Everyone agrees on the importance of readable code, but no-one can agree
