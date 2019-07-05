@@ -44,6 +44,7 @@ const TalksPage = ({location}) => (
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     />
+    <p>Slides available on <a href="https://speakerdeck.com/dvberzon/useable-grammatical-and-readable-code">Speaker deck</a></p>
 
     <h3>Random Thoughts</h3>
     <cite>Fri 6th July 2018 - <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Brighton Ruby</a></cite>
