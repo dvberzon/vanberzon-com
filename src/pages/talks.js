@@ -4,16 +4,16 @@ import Layout from "../components/layout"
 const TalksPage = ({location}) => (
   <Layout location={location} title="Talks">
     <h1>Talks</h1>
-    <p>Daniel is actively seaking opportunities to speak at Tech Conferences
+    <p>Daniel is actively seeking opportunities to speak at Tech Conferences
     or meetups. Subjects range from code methodologies and readability to 
     specific technologies. Below are some examples of previous talks as well
     as any programmed future appearances.</p>
     <h2>Upcoming talks</h2>
     <h3>The Nitty Gitty</h3>
     <cite>Thurs 5th Sep 2019 - <a href="https://asyncjs.com/">Async Brighton</a></cite>
-    <p>Git is not complicated, but it is complex (and confusing). In this talk I explain the 
+    <p>Git is not complicated, but it is complex (and confusing). In this talk, I explain the 
     basic building blocks of git: commits, blobs, trees and refs. I then build up, past branches and merges
-    to remotes and rebases in an attempt to demystify the tool we all rely on.</p>
+    to remotes and re-bases in an attempt to demystify the tool we all rely on.</p>
     <h3>Readable code - Available without Prescription</h3>
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/">HalfStack Conference London</a></cite>
     <p>This talk tells the story of a revolution in the world of linguistics 
@@ -48,7 +48,7 @@ const TalksPage = ({location}) => (
 
     <h3>Random Thoughts</h3>
     <cite>Fri 6th July 2018 - <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Brighton Ruby</a></cite>
-    <p>How a single line of ruby code, the flip of a coin and some bad luck lead to an understanding of how random numbers really work, and why fairness isn’t always the best policy.</p>
+    <p>How a single line of Ruby code, the flip of a coin and some bad luck lead to an understanding of how random numbers really work, and why fairness isn’t always the best policy.</p>
     <p>
       <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Watch the video <span role="img" aria-label="watch">👀</span></a>
     </p>

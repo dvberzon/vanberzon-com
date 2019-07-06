@@ -79,7 +79,7 @@ module.exports = {
         short_name: `van Berzon`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#9c44ab`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
       },
