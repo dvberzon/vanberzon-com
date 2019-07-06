@@ -1,14 +1,10 @@
 ---
-title: The "How" of howreadable
+title: The “How” of howreadable
 date: "2019-07-05"
 description: A rundown of the thinking behind howreadable.com, my online experiment to measure code readability. How the experiment works and what I hope to measure with it.
 ---
 
-In 2018 Daniel started an online experiment at [howreadable.com](http://howreadable.com/). The aim of the experiment was to try to uncover rules for how programming patterns affect code readability, based on empirical observation of developer behaviour.
-
-Code readability is vital to productivity in software development, but there is little literature on the subject and almost no academic research. A developer reading up on how to improve the readability of their code will be presented with advice that is almost exclusively based on subjective personal opinion. There has been academic [research](https://www.researchgate.net/publication/260648747_Learning_a_Metric_for_Code_Readability) on the subject, but even that is based on subjective assessments of the readability of code by developers themselves. What is lacking is an objective metric for readability based on empirical observation.
-
-The inspiration for this experiment came from the world of linguistics, where the traditional view of grammar as a set of prescriptive rules was replaced by a search for descriptive grammar rules based on observation. This [post](/readable-code-prescription) goes into further detail.
+In my previous [post](/readable-code-prescription) I introduced my readability experiment at [howreadable.com](http://howreadable.com). In this post I will go into further detail on the methodology of the experiment and how I intend to improve the results going forward.
 
 # Methodology
 
