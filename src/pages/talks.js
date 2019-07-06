@@ -41,7 +41,7 @@ const TalksPage = ({location}) => (
       width="560"
       height="315"
       src="https://www.youtube.com/embed/dlczTNFHpww"
-      frameborder="0"
+      frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     />
     <p>Slides available on <a href="https://speakerdeck.com/dvberzon/useable-grammatical-and-readable-code">Speaker deck</a></p>

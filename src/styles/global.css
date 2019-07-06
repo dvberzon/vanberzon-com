@@ -5,11 +5,16 @@ header {
 
 .header-small {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: flex-end;
   border-bottom: solid 1px hsla(0,0%,0%,0.2);
   padding-bottom: 1.5rem;
 }
 
+nav.main-nav {
+  margin-top: 20px;
+}
 header h1 {
   margin: 0;
 }
