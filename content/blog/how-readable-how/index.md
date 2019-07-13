@@ -6,15 +6,15 @@ description: A rundown of the thinking behind howreadable.com, my online experim
 
 In my previous [post][1], I introduced my code readability experiment at [howreadable.com][2]. I explained how my interest in linguistics, and specifically the difference between prescriptive and descriptive grammar rules, inspired me to try and uncover descriptive rules for how to write readable code. I set up the *howreadable* experiment as an attempt to discover the coding patterns that developers will instinctively follow to make their source code more readable. But how exactly does the experiment intend to achieve this? What is the "how" of *howreadable*
 
-In this post, I will explain the thinking behind the experiment, the methodology of its first iteration, and how I intend to tweak the methodology to improve the results going forward.
+In this post, I will explain the thinking behind the experiment, the methodology of its first iteration, and how I intend to improve the experiment to get better results going forward.
 
 ## How readable?
 
-The aim of the experiment is to discover rules for improving readability that developers instinctively follow when writing code. To do this, we need to have a way of objectively measuring the readability of a snippet of code.
+The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. To do this, we need to have a way of objectively measuring the readability of a code snippet.
 
-Code readability is typically measured based on the subjective opinion of the developer. A developer will rate the readability of a snippet of code by evaluating their own experience reading it. This is the simplest way to evaluate code, but subjective opinion is not the most reliable metric. Just as people are often not consciously aware of the grammar rules they follow in their speech, developers may not be able to accurately assess their own ability to read and understand code. It would be better if we could measure readability directly.
+Code readability is typically measured based on subjective opinion. A developer will rate the readability of a snippet of code by evaluating their own experience reading it. This is the simplest way to evaluate code, but subjective opinion is not the most reliable metric. Just as people are not often  consciously aware of the grammar rules they follow in their speech, developers may not be able to accurately assess their own ability to read and understand code. It would be better if we could measure readability directly.
 
-The **howreadable** experiment takes a different approach. It attempts to measure the readability of a snippet of code by presenting it to a developer and directly observing the developer's behaviour while reading it. For the purposes of the experiment, we think of code readability as measuring how rapidly a developer can understand what a snippet of code does on seeing it for the first time. The faster the developer can understand the code, the more readable it is.
+The **howreadable** experiment takes a different approach. It attempts to measure the readability of a snippet of code by presenting it to a developer and directly observing the developer's behaviour while reading it. For the purposes of the experiment, code readability is thought of as measuring how rapidly a developer can understand what a snippet of code does on seeing it for the first time. The faster the developer can understand the code, the more readable it is.
 
 Based on this definition, the experiment involves two objective measurements.
 
@@ -25,7 +25,7 @@ The first metric tests the developers understanding of the code. The second meas
 
 ## How to
 
-In the first iteration of the experiment, we measured the readability of a number of code snippets as follows:
+In the first iteration of the experiment, I measured the readability of a number of code snippets as follows:
 
 - A developer agrees to participate in the experiment and a responds to a few questions about themselves about their coding experience and the language they typically work in.
 - They are then shown a snippet of code and a timer is started.
@@ -35,7 +35,7 @@ In the first iteration of the experiment, we measured the readability of a numbe
 
 The snippets presented to the developer each follow a specific coding pattern with the aim of determining whether that pattern affects readability. In each case, the developer is either presented with a snippet that follows the pattern, or a *control* snippet that does not.
 
-As an example, one of the experiments is designed to measure the readability of **ternary operators**. A ternary operator is a conditional expression that looks like this (in javascript).
+The coding patterns tested had all been claimed to improve or inhibit readability, and lent themselves to being turned into comparison tests. As an example, one of the experiments is designed to measure the readability of **ternary operators**. A ternary operator is a conditional expression that looks like this (in javascript).
 
 ```js
 var result = condition ? 'yes' : 'no';
@@ -59,7 +59,7 @@ The ternary operator, if a developer is familiar with it, is a convenient and te
 
 To test the readability of a ternary operator as part of our experiment, a developer would be shown one of two code snippets. The snippets would be identical except that in one case the conditional assignment would be achieved through a ternary operator and the other an if statement. They would then be asked a question about the code, for example "What value will the variable `result` have?". In both snippets the answer would be the same.
 
-There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of block randomisation, which I explained in my "[random thoughts](https://brightonruby.com/2018/random-thoughts-daniel-berzon/)" talk.
+There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of block randomisation, which I explained in my [random thoughts](https://brightonruby.com/2018/random-thoughts-daniel-berzon/) talk.
 
 ## How it went
 
@@ -76,13 +76,45 @@ The patterns tested in the first iteration of the experiment were as follows:
 
 For each participant we captured the time taken looking at the code and whether their response to the question was correct. Then, for each pattern we averaged the values for all the participants that saw the snippet with the pattern, and compared these to the average values for the control snippets. We were hoping to see a significant difference between the two snippets in the average time taken and percentage of correct answers. The snippet with the lower time taken and the higher percentage of correct answers, would be considered the more readable.
 
-We had a total of 247 participants take part in the experiment, of whom nearly half had been in software development for over 10 years. This meant that in most cases for each snippet we had approximately 120 results. The percentages of correct answers were typically around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values in the higher times. The graph below show's the results for the ternary operator test.
+We had a total of 247 participants take part in the experiment, of whom nearly half had been in software development for over 10 years. The percentages of correct answers in each experiment were around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values in the higher times. The graph below shows the results for the ternary operator test.
 
 ![Ternary Operator Results](./graph.png)
 
+In the case of the ternary operator, the average times taken for each pattern were:
 
+- Ternary operator: **27.1 s**
+- If else statement: **23.5 s** 
+
+At face value, these results suggests a slight readability improvement when using an if else statement over a ternary operator. However, in order to determine whether this result represents an actual difference in readability or just random noise, I needed to apply some statistical analysis. I compared the two distributions using a [Student's T-Test]([https://en.wikipedia.org/wiki/Student%27s_t-test](https://en.wikipedia.org/wiki/Student's_t-test)), which is a metric for the comparison of two normal distributions. In order to be statistically significant, the results of the T-test should give a *P value* of < 0.05. In our case the *p value* was 0.44, which is much too high, and indicates no useful result.
+
+Sadly this was the story with almost all of the experiments. For the most part our p values were too high to indicate a significant result. There are many reasons that this could be occurring, among others:
+
+- There is no measurable effect on readability for the patterns we chose (the *null hypothesis* was true)
+- There is an effect, but it is too small to be accurately measured by our experiment.
+- The sample size was too low, and an effect would have been measurable with many more participants.
+- There is an error in our methodology preventing us from measuring a result.
 
 ## How Readable 2.0
+
+There is no way of knowing the reason why our results failed to give statistically significant answers, and it may be that there are no answers to find. However, there are obvious improvements we can make in order to try for better results, and I am preparing a second iteration of the experiment to run in the autumn.
+
+The most obvious improvement will be to dramatically increase the number of participants. I am putting a lot of effort into promoting the experiment including [presenting](/talks) my ideas at conferences and meet-ups. However, there are also tweaks that can be made to the methodology itself.
+
+The histogram above showed a very long tail in the higher time regions of the distributions, indicating that some participants were taking longer than necessary to read the code. One clue to the reason for the issue was the comments that I got on the snippets. In the initial version of the experiment the participants, as well as answering the question about the code itself, were asked to rate the snippets readability on a scale of 0 to 5, and to leave any comments they wished about the code. The intention was to compare perceived readability with measured readability, but the nature of the comments left suggested that participants may have misunderstood the purpose of the experiment. They tended to be critiques of the code, often harsh. My favourite comment left was.
+
+> If you write this you are bad and you should feel bad!
+
+We were attempting to measure how long it would take a participant to come to an understanding of the code at face value. However if the participant is critiquing the code, they can take as long as they like reading it to pick holes in it. The next iteration of the experiment will include better signposting to indicate how to approach reading the code, and will remove the temptation to critique by removing the comments box and perceived readability scale.
+
+Another flaw in the methodology was only presenting one example of each pattern. It was pointed out to me by a friend with experience in psychometric testing, that a proportion of people find tests intimidating and will often be hesitant and over cautious when responding to them. This will be true of any new test they are presented with. Since there was only one example of each pattern, this effect could seriously damage the accuracy of the results.
+
+The next iteration of the experiment will try to overcome this issue by presenting multiple snippets for the same pattern, alternating randomly between control and pattern snippets. The hope is that any initial hesitation when presented with a new pattern, will be overcome after repeating a series of similar tests, and that the aggregate results will remove this effect.
+
+The downside of this change is that the participant will have to respond to exponentially more snippets, and so we will probably have to balance this by choosing fewer patterns to test. The new flow for the experiment is ready, and I am currently in the process of selecting promising patterns and writing the snippets.
+
+This whole process has been a lot more work than I anticipated - who knew that doing science was hard - but I have learned an extraordinary amount along the way and I am excited to see if I can get some actual useful results. Research is laborious but exciting, and I am extremely grateful for all the support I am getting from both my loved ones and the wider community in pursuing this adventure.
+
+*If you have managed to get this far down the post, you seem sufficiently interested in this topic to be able to help me. If you have any interest in participating or collaborating in this project please contact me at [info@howreadable.com](mailto:info@howreadable.com), and I will put you to good use.*
 
 
 
