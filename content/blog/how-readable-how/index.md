@@ -59,9 +59,20 @@ The ternary operator, if a developer is familiar with it, is a convenient and te
 
 To test the readability of a ternary operator as part of our experiment, a developer would be shown one of two code snippets. The snippets would be identical except that it one case the conditional assignment would be achieved through a ternary operator and the other an if statement.
 
-There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of *block randomisation*, which I explain
+There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of block randomisation, which I explained in my "[random thoughts](/talks#random_thoughts)" talk.
 
-## How did we do
+The patterns we tested were:
+
+- Ternary operators
+- Nested ternary operators
+- Code comments
+- Function naming
+- Extracting inline processes into functions 
+- Early return
+- Array reducers
+- Switch statements
+
+## How it went
 
 
 
