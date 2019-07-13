@@ -57,11 +57,13 @@ if (condition) {
 
 The ternary operator, if a developer is familiar with it, is a convenient and terse way to write a conditional assignment. But is it more readable than the traditional if statement?
 
-To test the readability of a ternary operator as part of our experiment, a developer would be shown one of two code snippets. The snippets would be identical except that it one case the conditional assignment would be achieved through a ternary operator and the other an if statement.
+To test the readability of a ternary operator as part of our experiment, a developer would be shown one of two code snippets. The snippets would be identical except that in one case the conditional assignment would be achieved through a ternary operator and the other an if statement. They would then be asked a question about the code, for example "What value will the variable `result` have?". In both snippets the answer would be the same.
 
-There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of block randomisation, which I explained in my "[random thoughts](/talks#random_thoughts)" talk.
+There were a total of nine experiments, each testing a different coding pattern. In each experiment the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the numbers of results for each snippet even, we used a system of block randomisation, which I explained in my "[random thoughts](https://brightonruby.com/2018/random-thoughts-daniel-berzon/)" talk.
 
-The patterns we tested were:
+## How it went
+
+The patterns tested in the first iteration of the experiment were as follows:
 
 - Ternary operators
 - Nested ternary operators
@@ -72,7 +74,11 @@ The patterns we tested were:
 - Array reducers
 - Switch statements
 
-## How it went
+For each participant we captured the time taken looking at the code and whether their response to the question was correct. Then, for each pattern we averaged the values for all the participants that saw the snippet with the pattern, and compared these to the average values for the control snippets. We were hoping to see a significant difference between the two snippets in the average time taken and percentage of correct answers. The snippet with the lower time taken and the higher percentage of correct answers, would be considered the more readable.
+
+We had a total of 247 participants take part in the experiment, of whom nearly half had been in software development for over 10 years. This meant that in most cases for each snippet we had approximately 120 results. The percentages of correct answers were typically around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values in the higher times. The graph below show's the results for the ternary operator test.
+
+![Ternary Operator Results](./graph.png)
 
 
 

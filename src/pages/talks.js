@@ -45,8 +45,7 @@ const TalksPage = ({location}) => (
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     />
     <p>Slides available on <a href="https://speakerdeck.com/dvberzon/useable-grammatical-and-readable-code">Speaker deck</a></p>
-    <a name="random_thoughts" />
-    <h3>Random Thoughts</h3>
+    <h3 id="random_thoughts">Random Thoughts</h3>
     <cite>Fri 6th July 2018 - <a href="https://brightonruby.com/2018/random-thoughts-daniel-berzon/">Brighton Ruby</a></cite>
     <p>How a single line of Ruby code, the flip of a coin and some bad luck lead to an understanding of how random numbers really work, and why fairness isn’t always the best policy.</p>
     <p>
