@@ -2,6 +2,9 @@
 title: Git Merge - Are you branching up the wrong tree?
 date: "2018-03-19"
 description: Merging branches in Git is a core part of my development workflow. But it doesn't work how I thought it did, and how it does work is ingenious.
+source:
+  name: Ocasta
+  url: "https://ocasta.com/2018/how-i-started-to-get-git/"
 ---
 At [Ocasta](https://ocasta.com) we have a diverse group of developers working with a variety of languages and technologies. Each of us works day-to-day with some combination of Swift, Go, JavaScript, Java, Kotlin, Ruby, HTML, or CSS, to name a few. But the one thing we have in common is that every day we find ourselves using [Git](https://git-scm.com/).
 

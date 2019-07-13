@@ -2,6 +2,9 @@
 title: Readable Code without Prescription Glasses
 date: "2019-02-01"
 description: What linters and grumpy English teachers have in common, why description is better than prescription, and how this can teach us to help us write readable code.
+source:
+  name: Ocasta
+  url: "https://ocasta.com/2019/readable-code-without-prescription-glasses/"
 ---
 
 Between you and I, I have never been very good at grammar. I grew up burdened by terrible spelling, atrocious handwriting and a patchy understanding of grammar rules. At school, my heartfelt compositions were met with disdain from grumpy English teachers, who returned them to me covered in red ink. They used to strongly disapprove of my split infinitives and any sentence that a preposition found itself at the end of.
