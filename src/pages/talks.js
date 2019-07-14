@@ -27,7 +27,7 @@ const TalksPage = ({location}) => (
     we will learn the dangers of prescriptive rules, and discover how an amateur
     online scientific experiment could help us write readable code.</p>
     <h2>Previous talks</h2>
-    <h3>Useable, Grammatical and Readable Code</h3>
+    <h3 id="async-2018">Useable, Grammatical and Readable Code</h3>
     <cite>Thurs 6th Dec 2018 - <a href="https://asyncjs.com/readable-code/">Async Brighton</a></cite>
     <p>As software developers, we all know that we need to make our code more
       readable - but how exactly? There is not a lot of literature out there

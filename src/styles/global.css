@@ -12,6 +12,10 @@ header {
   padding-bottom: 1.5rem;
 }
 
+blockquote {
+  border-left-color: #be90c5;
+}
+
 nav.main-nav {
   margin-top: 20px;
 }
