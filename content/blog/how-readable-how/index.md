@@ -4,7 +4,7 @@ date: "2019-07-05"
 description: A rundown of the thinking behind howreadable.com, my online experiment to measure code readability. How the experiment works and what I hope to measure with it.
 ---
 
-In my previous [post][1], I introduced my code readability experiment at [howreadable.com][2]. I explained how my interest in linguistics, and specifically the difference between prescriptive and descriptive grammar rules, inspired me to try and uncover descriptive rules for how to write readable code. I set up the *howreadable* experiment as an attempt to discover the coding patterns that developers will instinctively follow to make their source code more readable. But how exactly does the experiment intend to achieve this? What is the "how" of *howreadable*
+In my previous [post][1], I introduced my code readability experiment at [howreadable.com][2]. I explained how my interest in linguistics, and specifically the difference between prescriptive and descriptive grammar rules, inspired me to try and uncover descriptive rules for how to write readable code. I set up the *howreadable* experiment as an attempt to discover the coding patterns that developers will instinctively follow to make their source code more readable. But how exactly does the experiment intend to achieve this? What is the "how" of *howreadable*?
 
 In this post, I will explain the thinking behind the experiment, the methodology of its first iteration, and how I intend to improve the experiment to get better results going forward.
 
