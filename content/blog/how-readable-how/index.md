@@ -4,7 +4,9 @@ date: "2019-07-05"
 description: A rundown of the thinking behind howreadable.com, my online experiment to measure code readability. How the experiment works and what I hope to measure with it.
 ---
 
-In my previous [post][1], I introduced my code readability experiment at [howreadable.com][2]. I explained how my interest in linguistics, and specifically the difference between prescriptive and descriptive grammar rules, inspired me to try and uncover descriptive rules for how to write readable code. I set up the *howreadable* experiment as an attempt to discover the coding patterns that developers will instinctively follow to make their source code more readable. But how exactly does the experiment intend to achieve this? What is the "how" of *howreadable*?
+In my last [post][1], I introduced my code readability experiment at [howreadable.com][2]. I explained how my interest in linguistics, and specifically the difference between *prescriptive* and *descriptive* grammar, inspired me to try and uncover descriptive rules for how to write readable code.
+
+I set up the *howreadable* experiment as an attempt to discover the coding patterns that developers will instinctively follow to make their source code more readable. But how exactly does the experiment intend to achieve this? What is the "how" of *howreadable*?
 
 In this post, I will explain the thinking behind the experiment, the methodology of its first iteration, and how I intend to improve the experiment to get better results going forward.
 
@@ -12,14 +14,14 @@ In this post, I will explain the thinking behind the experiment, the methodology
 
 The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. To do this, we need to have a way of objectively measuring the readability of a code snippet.
 
-Code readability is typically measured based on subjective opinion. A developer will rate the readability of a snippet of code by evaluating their own experience reading it. This is the simplest way to evaluate code, but subjective opinion is not the most reliable metric. Just as people are not often consciously aware of the grammar rules they follow in their speech, developers may not be able to accurately assess their own ability to read and understand code. It would be better if we could measure readability directly.
+Code readability is typically measured based on subjective opinion. A developer will rate the readability of a snippet of code by asking themselves how easy they found it to read. This is the simplest way to evaluate code, but subjective opinion is not the most reliable metric. Just as people are not often consciously aware of the grammar rules they follow in their speech, developers may not be able to accurately assess their own ability to read and understand code. It would be better if we could measure readability directly.
 
 The *howreadable* experiment takes a different approach. It attempts to measure the readability of a snippet of code directly by presenting it to a developer and observing the developer's behaviour while reading it. The experiment interprets code readability as a measure of the effort needed by a developer to understand the behaviour of a snippet of code on seeing it for the first time. The faster the developer can understand the code, the more readable it is.
 
 Based on this definition, the experiment involves two objective measurements.
 
 1. Can a developer correctly predict the result of executing a code snippet?
-2. How long does the developer take reading the code before making that prediction?
+2. How long does the developer need to read the code before making that prediction?
 
 The first metric tests the developer's understanding of the code. The second measures the ease with which they gained that understanding.
 
@@ -76,9 +78,9 @@ The patterns tested in the first iteration of the experiment were as follows:
 - Array reducers
 - Switch statements
 
-For each participant, I captured the time taken looking at the code and whether their response to the question was correct. I then process the results for a pattern by taking the average values of participants that saw the snippets with the pattern and compare them to the average values for participants that saw the equivalent control snippet. I was hoping to see a significant difference between the two snippets in the average time taken and the percentage of correct answers. The snippet with the lower time taken and the higher percentage of correct answers would be considered the more readable.
+For each participant, I captured the time taken looking at the code and whether their response to the question was correct. I then processed the results for a pattern by taking the average values of participants that saw the snippets with the pattern and compared them to the average values for participants that saw the equivalent control snippet. I was hoping to see a significant difference between the two snippets in the average time taken and the percentage of correct answers. The snippet with the lower time taken and the higher percentage of correct answers would be considered the more readable.
 
-There were a total of 247 participants that took part in the experiment, of whom nearly half had been in software development for over 10 years. The percentages of correct answers in each experiment were around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values in the higher times. The graph below shows the results for the ternary operator test.
+There were a total of 247 participants that took part in the experiment, of whom nearly half had been in software development for over 10 years. The percentages of correct answers in each experiment were around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values at the higher end. The graph below shows the results for the ternary operator test.
 
 ![Ternary Operator Results](./graph.png)
 
@@ -93,7 +95,7 @@ Sadly this was the story with almost all of the experiments. For the most part, 
 
 - There is no measurable effect on readability for the patterns we chose (the *null hypothesis* was true).
 - There is an effect, but it is too small to be accurately measured by our experiment.
-- The sample size was too low, and an effect would have been measurable with many more participants.
+- The sample size was too low, and an effect would have been detected with many more participants.
 - There is an error in our methodology preventing us from measuring a result.
 
 ## How Readable 2.0
@@ -102,7 +104,7 @@ There is no way of knowing the reason why our results failed to give statistical
 
 The most obvious improvement will be to dramatically increase the number of participants. We are putting a lot of effort into promoting the experiment, including [presenting](/talks) the experiment at conferences and meet-ups. However, there are also useful tweaks that could be made to the methodology itself.
 
-The histogram above showed a very long tail in the higher time regions of the distributions, indicating that some participants were taking longer than necessary to read the code. One clue to the reason for the issue was the comments that I received on the snippets. In the initial version of the experiment the participants, as well as answering the question about the code itself, were asked to rate the snippet's readability on a scale of 0 to 5, and to leave any comments they wished about the code. The intention was to compare perceived readability with measured readability, but the nature of the comments left suggested that participants may have misunderstood the purpose of the experiment. The comments tended to be critiques of the code -- often harsh ones. My favourite comment left was:
+The histogram above showed a very long tail in the slower time region of the distributions, indicating that some participants were taking longer than usual to read the code. One clue to the reason for the issue was the comments that I received on the snippets. In the initial version of the experiment the participants, as well as answering the question about the code itself, were asked to rate the snippet's readability on a scale of 0 to 5, and to leave any comments they wished. The intention was to compare perceived readability with measured readability, but the nature of the comments left suggested that participants may have misunderstood the purpose of the experiment. The comments tended to be critiques of the code -- often harsh ones. My favourite comment left was:
 
 > If you write this, you are **bad** and you should **feel bad**!
 
