@@ -29,9 +29,7 @@ This definition is by no means perfect. It may be, for example, that the time ta
 
 ## How to
 
-In the first iteration of the experiment, I measured the readability of a selection of code snippets as follows:
-
-**change this paragraph above**
+In the first iteration of the experiment, we measured the readability of a selection of code snippets. The process was as follows:
 
 - A developer agrees to participate in the experiment and responds to questions about their level of coding experience and the language they typically work in.
 - They are then shown a snippet of code and a timer is started.
