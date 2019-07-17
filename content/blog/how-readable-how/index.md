@@ -8,7 +8,7 @@ Have you ever had a really cool, simple idea that turned into a completely diffe
 
 In my last [post][1], I explained how my interest in linguistics, and specifically the difference between *prescriptive* and *descriptive* grammar, inspired me to try and uncover descriptive rules for how to write readable code. I told the story of the how this search led to my experiment on [howreadable.com][2].
 
-The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. I haven't found any rules yet, but I have discovered that I enjoy statistical analysis and experiment design and the company of my collaborators.
+The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. I haven't found any rules yet, but I have discovered that I enjoy statistical analysis, experiment design and the company of my collaborators.
 
 If my last post dealt with the *why*, this post will deal with the *how* of *howreadable*. I will explain the methodology behind first iteration of the experiment, and the improvements that we have planned to achieve better results.
 
