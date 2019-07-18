@@ -8,15 +8,15 @@ Have you ever had a really cool, simple idea that turned into a completely diffe
 
 In my last [post][1], I explained how my interest in linguistics, and specifically the difference between *prescriptive* and *descriptive* grammar, inspired me to try and uncover descriptive rules for how to write readable code. I told the story of the how this search led to my experiment on [howreadable.com][2].
 
-The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. I haven't found any rules yet, but I have discovered that I enjoy statistical analysis, experiment design and the company of my collaborators.
+The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. I haven't found any rules yet, but I have discovered that experiment design is both hard and addictive, and a lot easier when you have help.
 
-If my last post dealt with the *why*, this post will deal with the *how* of *howreadable*. I will explain the methodology behind first iteration of the experiment, and the improvements that we have planned to achieve better results.
+My last post dealt with the *why* of *howreadable*. This post will deal with the *how*. I will explain the methodology behind first iteration of the experiment, and the improvements that we have planned to achieve better results.
 
 ## How readable?
 
 Code readability is typically measured based on subjective opinion. A developer will rate the readability of a snippet of code by asking themselves how easy they found it to read. This is the simplest way to evaluate code, but subjective opinion is not the most reliable metric. Just as people are not often consciously aware of the grammar rules they follow in their speech, developers may not be able to accurately assess their own ability to read and understand code. It would be better if we could measure readability directly.
 
-The *howreadable* experiment takes a different approach. It attempts to measure the readability of a snippet of code directly by presenting it to a developer and observing the developer's behaviour while reading it. The experiment interprets code readability as a measure of the effort needed by a developer to understand the behaviour of a snippet of code on seeing it for the first time. The faster the developer can understand the code, the more readable it is.
+The *howreadable* experiment takes a different approach. It attempts to measure the readability of a code snippet by presenting it to a developer and directly observing the developer's behaviour while reading it. The experiment interprets code readability as a measure of the effort needed by a developer to understand a snippet of code when they read it for the first time. The faster the developer can understand the code, the more readable it is.
 
 Based on this definition, the experiment involves two objective measurements.
 
@@ -29,9 +29,9 @@ This definition is by no means perfect. It may be, for example, that the time ta
 
 ## How to
 
-In the first iteration of the experiment, we measured the readability of a selection of code snippets. The process was as follows:
+In the first iteration of the experiment, a participant developer would visit the *howreadable.com* website and read a series of code snippets. The process was as follows:
 
-- A developer agrees to participate in the experiment and responds to questions about their level of coding experience and the language they typically work in.
+- The developer agrees to participate in the experiment and responds to questions about their level of coding experience and the language they typically work in.
 - They are then shown a snippet of code and a timer is started.
 - They are asked to read the code and then answer a question about it, specifically what the value of a variable will be after executing the code.
 - When the developer feels they are ready to answer, the timer is stopped and they are presented with multiple-choice options for the result of the variable.
