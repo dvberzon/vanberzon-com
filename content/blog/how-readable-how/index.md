@@ -6,11 +6,11 @@ description: A rundown of the thinking behind howreadable.com, my online experim
 
 Have you ever had a really cool, simple idea that turned into a completely different, much more complicated reality? In July 2018 I had a nice idea for a conference talk about coding and grammar. A few months later I was designing and running an online scientific experiment!
 
-In my last [post][1], I explained how my interest in linguistics, and specifically the difference between *prescriptive* and *descriptive* grammar, inspired me to try and uncover descriptive rules for how to write readable code. I told the story of the how this search led to my experiment on [howreadable.com][2].
+In my last [post][1], I explained how my interest in linguistics, and specifically the difference between *prescriptive* and *descriptive* grammar, inspired me to try and uncover descriptive rules for how to write readable code. I told the story of how this search led to my experiment on [howreadable.com][2].
 
 The aim of *howreadable* is to discover rules for improving readability that developers instinctively follow when writing code. I haven't found any rules yet, but I have discovered that experiment design is both hard and addictive, and a lot easier when you have help.
 
-My last post dealt with the *why* of *howreadable*. This post will deal with the *how*. I will explain the methodology behind first iteration of the experiment, and the improvements that we have planned to achieve better results.
+My last post dealt with the *why* of *howreadable*. This post will deal with the *how*. I will explain the methodology behind the first iteration of the experiment, and the improvements that we have planned to achieve better results.
 
 ## How readable?
 
@@ -61,7 +61,7 @@ if (condition) {
 
 If a developer is familiar with the ternary operator, it is a convenient and terse way to write a conditional assignment. But is it more readable than the traditional if statement?
 
-To test this in our experiment, we would show the developer either a test snippet that uses a ternary operator, or a control snippet that uses an if else statement. Apart from the type of conditional used, the two snippets would be identical. After reading one of the snippets, the developer would be asked "What value will the variable `result` have?". The correct answer would be the same for both snippets.
+To test this in our experiment, we would show the developer either a test snippet that uses a ternary operator or a control snippet that uses an if-else statement. Apart from the type of conditional used, the two snippets would be identical. After reading one of the snippets, the developer would be asked: "What value will the variable `result` have?". The correct answer would be the same for both snippets.
 
 There were a total of nine experiments, each testing a different coding pattern. In each experiment, the developer was shown either the snippet with the pattern or the *control* snippet, determined at random. To keep the number of results for each snippet the same, we used a system of block randomisation -- a process I explained in my [random thoughts](https://brightonruby.com/2018/random-thoughts-daniel-berzon/) talk.
 
@@ -80,7 +80,7 @@ The patterns tested in the first iteration of the experiment were as follows:
 
 For each participant, I captured the time taken looking at the code and whether their response to the question was correct. I then processed the results for a pattern by taking the average values of participants that saw the test snippet and compared them to the average values for participants that saw the control snippet. I was hoping to see a significant difference between the two snippets in the average time taken and the percentage of correct answers. The snippet with the lower time taken and the higher percentage of correct answers would be considered the more readable.
 
-There were a total of 247 participants that took part in the experiment, of whom nearly half had been in software development for over 10 years. The percentages of correct answers in each experiment were around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values at the higher end. The graph below shows the results for the ternary operator test.
+There were a total of 247 participants that took part in the experiment, of whom nearly half had been in software development for over 10 years. The percentage of correct answers in each experiment were around 90 - 95%. In terms of the time taken reading the code, the values typically resembled a normal distribution, but with a long tail of values at the higher end. The graph below shows the results for the ternary operator test.
 
 ![Ternary Operator Results](./graph.png)
 
@@ -110,7 +110,7 @@ The histogram above showed a very long tail in the slower time region of the dis
 
 I was attempting to measure how long it would take a participant to come to an understanding of the code at face value. However, if the participant is reviewing the code and trying to pick holes in it, they can take as long as they like reading it. The next iteration of the experiment will include better signposting to indicate how to approach reading the code and will remove the temptation to critique by removing the comments box and perceived readability scale.
 
-Another flaw in the methodology might have been to only present one example of each pattern. A proportion of participants are likely to find tests intimidating and may be hesitant and over-cautious when responding to them. The next iteration of the experiment will try to overcome this issue by presenting multiple snippets for the same pattern, alternating randomly between control and pattern snippets. The hope is that any initial hesitation when presented with a new pattern, will be overcome after repeating a series of similar tests. The aggregate results should remove the effect of the hesitation.
+Another flaw in the methodology might have been to only present one example of each pattern. A proportion of participants are likely to find tests intimidating and might be hesitant and over-cautious when responding to them. The next iteration of the experiment will try to overcome this issue by presenting multiple snippets for the same pattern, alternating randomly between test and control snippets. The hope is that any initial hesitation when presented with a new pattern, will be overcome after repeating a series of similar tests. The aggregate results should remove the effect of the hesitation.
 
 The downside of this change is that the participant will have to respond to many more snippets, and so we will probably have to balance this by choosing fewer patterns to test. This means that for the second version it will be important to prioritise patterns we feel have the most potential. We are currently in the process of selecting promising patterns and writing the snippets for them.
 
