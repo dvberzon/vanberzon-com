@@ -1,6 +1,6 @@
 ---
 title: The “How” of howreadable
-date: "2019-07-05"
+date: "2019-07-18"
 description: A rundown of the thinking behind howreadable.com, my online experiment to measure code readability. How the experiment works and what I hope to measure with it.
 ---
 
