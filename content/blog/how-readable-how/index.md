@@ -32,7 +32,7 @@ This definition is by no means perfect. It may be, for example, that the time ta
 In the first iteration of the experiment, a participant developer would visit the *howreadable.com* website and read a series of code snippets. The process was as follows:
 
 - The developer agrees to participate in the experiment and responds to questions about their level of coding experience and the language they typically work in.
-- They are then shown a snippet of code and a timer is started.
+- They are then shown a snippet of code and a timer is started in the background.
 - They are asked to read the code and then answer a question about it, specifically what the value of a variable will be after executing the code.
 - When the developer feels they are ready to answer, the timer is stopped and they are presented with multiple-choice options for the result of the variable.
 - The developer submits their answer, and the process is repeated for the next code snippet.
@@ -89,7 +89,7 @@ In the case of the ternary operator, the average times taken for each pattern we
 - Ternary operator: **27.1 s**
 - If else statement: **23.5 s** 
 
-At face value, these results suggest a slight readability improvement when using an if-else statement over a ternary operator. However, to determine whether this result represents an actual difference in readability or just random noise, I needed to apply some statistical analysis. I compared the two distributions using a [Student's T-Test]([https://en.wikipedia.org/wiki/Student%27s_t-test](https://en.wikipedia.org/wiki/Student's_t-test)), which is a metric for the comparison of two normal distributions. To be statistically significant, the results of the T-test should give a *P-value* of < 0.05. In our case, the *p-value* was 0.44, which is much too high, and indicates no useful result.
+At face value, these results suggest a slight readability improvement when using an if-else statement over a ternary operator. However, to determine whether this result represents an actual difference in readability or just random noise, I needed to apply some statistical analysis. I compared the two distributions using a [Student's T-Test](https://en.wikipedia.org/wiki/Student's_t-test), which is a metric for the comparison of two normal distributions. To be statistically significant, the results of the T-test should give a *P-value* of < 0.05. In our case, the *p-value* was 0.44, which is much too high, and indicates no useful result.
 
 Sadly this was the story with almost all of the experiments. For the most part, our P-values were too high to indicate a significant result. There are many reasons that this could be occurring, among others:
 
@@ -102,7 +102,7 @@ Sadly this was the story with almost all of the experiments. For the most part, 
 
 There is no way of knowing the reason why our results failed to give statistically significant answers, and it may well be that there are no answers to find. However, there are some simple improvements we can make to the experiments to try for better results. Since presenting my findings in [December 2018](/talks#async-2018), a small team of colleagues have gathered to work on this project and together we are preparing a second iteration of the experiment to run in the autumn.
 
-The most obvious improvement will be to dramatically increase the number of participants. We are putting a lot of effort into promoting the experiment, including [presenting](/talks) the experiment at conferences and meet-ups. However, there are also useful tweaks that could be made to the methodology itself.
+The most obvious improvement will be to dramatically increase the number of participants. We are putting a lot of effort into promoting the experiment, including [presenting](/talks) the experiment at conferences and meet-ups. In the first iteration, the participants could choose to see the snippets in one of three languages. Whilst the majority chose JavaScript, a substantial number chose Ruby or Python, effectively reducing the number of participants we could correlate. The next iteration will focus exclusively on JavaScript. However, in addition to boosting participation, there are also useful tweaks that could be made to the methodology itself.
 
 The histogram above showed a very long tail in the slower time region of the distributions, indicating that some participants were taking longer than usual to read the code. One clue to the reason for the issue was the comments that I received on the snippets. In the initial version of the experiment the participants, as well as answering the question about the code itself, were asked to rate the snippet's readability on a scale of 0 to 5, and to leave any comments they wished. The intention was to compare perceived readability with measured readability, but the nature of the comments left suggested that participants may have misunderstood the purpose of the experiment. The comments tended to be critiques of the code -- often harsh ones. My favourite comment left was:
 
