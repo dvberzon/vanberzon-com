@@ -10,10 +10,17 @@ const TalksPage = ({location}) => (
     as any programmed future appearances.</p>
     <h2>Upcoming talks</h2>
     <h3>The Nitty Gitty</h3>
-    <cite>Thurs 5th Sep 2019 - <a href="https://asyncjs.com/">Async Brighton</a></cite>
+    <cite>Thurs 5th Sep 2019 - <a href="https://asyncjs.com/nitty-gitty/">Async Brighton</a></cite>
     <p>Git is not complicated, but it is complex (and confusing). In this talk, I explain the 
     basic building blocks of git: commits, blobs, trees and refs. I then build up, past branches and merges
     to remotes and re-bases in an attempt to demystify the tool we all rely on.</p>
+    <h3>Usable, Grammatical &amp; Readable Code</h3>
+    <cite>Tue 10th Sep 2019 - <a href="https://uxbri.org/September-2019/">UX Brighton</a></cite>
+    <p>How can software developers learn from UX and linguistics, to help make their code more readable?
+    Readable code is critical, but the available advice on how to write it is full of contradictory and arbitrary rules.</p>
+    <p>Grammar is also full of rules; “Prescriptive” ones that are hard to follow, and “Descriptive” ones that are intuitive.
+    With the help of Shakespeare, Chomsky and some little green men, we will learn the dangers of prescriptive rules, and 
+    see how the online experiment at howreadable.com applies UX research principles to uncover rules for readable code.</p>
     <h3>Readable code - Available without Prescription</h3>
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/">HalfStack Conference London</a></cite>
     <p>This talk tells the story of a revolution in the world of linguistics 
