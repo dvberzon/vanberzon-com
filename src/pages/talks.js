@@ -8,19 +8,12 @@ const TalksPage = ({location}) => (
     or meetups. Subjects range from code methodologies and readability to 
     specific technologies. Below are some examples of previous talks as well
     as any programmed future appearances.</p>
-    <h2>Upcoming talks</h2>
+    {/* <h2>Upcoming talks</h2> */}
+    <h2>Recent talks</h2>
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/">HalfStack Conference London</a></cite>
-    <p>This talk tells the story of a revolution in the world of linguistics 
-    and how we can apply it to software development. Everyone agrees on the importance of readable code, but no-one can agree
-    on how to write it. Are code comments evil or vital? Is it better to be
-    terse or explicit? There are many conflicting rules out there, and they
-    all feel a little arbitrary.</p>
-    <p>Grammar is also full of rules, and not all rules are the same. "Prescriptive"
-    rules are hard to follow. "Descriptive" rules are intuitive.
-    With the help of Shakespeare, Noam Chomsky and some little green men,
-    we will learn the dangers of prescriptive rules, and discover how an amateur
-    online scientific experiment could help us write readable code.</p>
-    <h2>Previous talks</h2>
+    <p>Grammar is all about rules, but not all rules are the same. This talk tells the story of a revolution in the world of linguistics and how we can apply it to software development.</p>
+    <p>With the help of Shakespeare, Noam Chomsky and some little green men, we will learn the dangers of prescriptive rules, and discover how an amateur online scientific experiment could help us write readable code.</p>
+    <p>Slides available on <a href="https://speakerdeck.com/dvberzon/readable-code-available-without-prescription">Speaker deck</a></p>
     <h3>The Nitty Gitty</h3>
     <cite>Thurs 5th Sep 2019 - <a href="https://asyncjs.com/nitty-gitty/">Async Brighton</a></cite>
     <p>Git is not complicated, but it is complex (and confusing). In this talk, I explain the 
