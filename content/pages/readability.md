@@ -4,11 +4,11 @@ title: Code Readability Research
 
 In 2018 Daniel started an online experiment at [howreadable.com](http://howreadable.com/). The aim of the experiment is to try to uncover rules for how programming patterns affect code readability, based on empirical observation of developer behaviour.
 
-A second iteration of the experiment is current [live](http://howreadable.com/) and accepting participants. The experiment will close in November 2019 and the results will be published in December.
+A second iteration of the experiment ran from October to November 2019. 545 participant developers took part leading to statistically significant results on the readability of six coding constructs. The full write-up is available on [howreadable.com](http://howreadable.com/)
 
 The __howreadable__ experiment was developed by Daniel van Berzon ([@dvberzon](https://twitter.com/dvberzon)) in collaboration with Jake 'Sid' Smith ([@JakeSidSmith](https://twitter.com/JakeSidSmith)) and Niall Coleman-Clarke ([@mceniallator](https://twitter.com/mceniallator)).
 
-Thank you to [Phil Teare](https://www.linkedin.com/in/philteare/), [Freyja Nash](https://uk.linkedin.com/in/frenah) and Narani van Laarhoven ([@fsf_2025](https://twitter.com/fsf_2025)) for their help with the experiment design, and Cian Campbell (Jazz Hands Presentations) for help with the visual design.
+Thank you to [Phil Teare](https://www.linkedin.com/in/philteare/), [Freyja Nash](https://uk.linkedin.com/in/frenah) and Narani van Laarhoven ([@fsf_2025](https://twitter.com/fsf_2025)) for their help with the experiment design, Cian Campbell ([Jazz Hands Presentations](mailto:cian@jazzhands.co.uk)) for help with the visual design and Oskar Holm ([@ohdatascience](https://twitter.com/ohdatascience)) for help with the statistical analysis.
 
 Special thanks go to [Ocasta](https://ocasta.com/) for sponsorship and financial support.
 
@@ -26,7 +26,7 @@ In the experiment, participant developers are presented with code snippets and a
 
 The first version of the experiment went live in 2018. Daniel presented his initial findings on Dec 6th 2018 at the [Async meetup]("https://asyncjs.com/readable-code/") in Brighton. You can watch my talk [here](https://www.youtube.com/watch?v=dlczTNFHpww) and the slides are available [here](https://speakerdeck.com/dvberzon/useable-grammatical-and-readable-code). 
 
-A second version of the experiment, with improved methodology, went live in October 2019
+A second version of the experiment, with improved methodology, ran from Oct - Nov 2019. I presented the results at [HalfStack](https://halfstackconf.com/london/) conference london. The slides are available [here](https://speakerdeck.com/dvberzon/readable-code-available-without-prescription).
 
 
 
