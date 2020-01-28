@@ -16,9 +16,7 @@ const TalksPage = ({location}) => (
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/2019/">HalfStack Conference London</a></cite>
     <p>Grammar is all about rules, but not all rules are the same. This talk tells the story of a revolution in the world of linguistics and how we can apply it to software development.</p>
     <p>With the help of Shakespeare, Noam Chomsky and some little green men, we will learn the dangers of prescriptive rules, and discover how an amateur online scientific experiment could help us write readable code.</p>
-    <p>
-      <a href="https://halfstackconf.streameventlive.com/archive/76">Watch the video <span role="img" aria-label="watch">👀</span></a>
-    </p>
+    <iframe class="video" src="https://halfstackconf.streameventlive.com/embed/76" height="315" width="560" seamless="seamless" frameBorder="0" scrolling="no" allowfullscreen></iframe>
     <p>Slides available on <a href="https://speakerdeck.com/dvberzon/readable-code-available-without-prescription">Speaker deck</a></p>
     <h3>The Nitty Gitty</h3>
     <cite>Thurs 5th Sep 2019 - <a href="https://asyncjs.com/nitty-gitty/">Async Brighton</a></cite>
