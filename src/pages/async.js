@@ -7,14 +7,14 @@ const Async = () => (
       textAlign: 'center',
       minHeight: '100vh',
     }}>
-      <img src="./flyer.png" style={{ maxHeight: '100vh'}}/>
+      <img src="/flyer.png" style={{ maxHeight: '100vh'}}/>
     </div>
     <div style={{
       backgroundColor: '#ffde00',
       textAlign: 'center',
       minHeight: '100vh',
     }}>
-      <img src="./discount.png" />
+      <img src="/discount.png" style={{ maxHeight: '100vh' }} />
     </div>
   </>
 );
