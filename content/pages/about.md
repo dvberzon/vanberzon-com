@@ -11,4 +11,4 @@ Daniel is fascinated by language, and having spent a decade living Spain, he has
 
 Daniel is travelling tonight on a [plane](https://www.youtube.com/watch?v=0f0TMfQNRk8)...
 
-[Email](mailto:daniel@vanberzon.com) | [Twitter](https://twitter.com/dvberzon) | [CV](/cv2019.pdf)
+[Email](mailto:daniel@vanberzon.com) | [Twitter](https://twitter.com/dvberzon) | [CV](/cv2020.pdf)
