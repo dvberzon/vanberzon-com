@@ -10,7 +10,7 @@ const TalksPage = ({location}) => (
     as any programmed future appearances.</p>
     <h2>Upcoming talks</h2>
     <h3>Readable Code - Available without Prescription</h3>
-    <cite>Thu 2nd Apr 2020 - <a href="https://2020.frontcon.com/sessions/readable-code-available-without-prescription/">FrontCon, Riga, Latvia</a></cite>
+    <cite>Date TBC - <a href="https://2020.frontcon.com/sessions/readable-code-available-without-prescription/">FrontCon, Riga, Latvia</a></cite>
     <h2>Recent talks</h2>
     <h3>Readable Code - Available without Prescription</h3>
     <cite>Fri 22nd Nov 2019 - <a href="https://halfstackconf.com/london/2019/">HalfStack Conference London</a></cite>
