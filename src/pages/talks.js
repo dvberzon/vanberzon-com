@@ -6,12 +6,13 @@ const TalksPage = ({location}) => (
     <h1>Talks</h1>
     <p>Daniel is actively seeking opportunities to speak at Tech Conferences
     or meetups. Subjects range from code methodologies and readability to 
-    specific technologies. Below are some examples of previous talks as well
-    as any programmed future appearances.</p>
-    <h2>Upcoming talks</h2>
+    specific technologies. Below are some examples of previous talks.</p>
+    
     <h3>Readable Code - Available without Prescription</h3>
     <cite>Fri 14th Aug 13:55 - <a href="https://2020.frontcon.com/sessions/readable-code-available-without-prescription/">FrontCon, Riga, Latvia</a></cite>
-    <h2>Recent talks</h2>
+    <p>This talk tells the story of a revolution in the world of linguistics and how we can apply it to software development. Everyone agrees on the importance of readable code, but no-one can agree on how to write it. There are many conflicting rules out there, and they are all opinionated and arbitrary.</p>
+    <p>Grammar is also full of rules, and not all rules are the same. “Prescriptive” rules are hard to follow. “Descriptive” rules are intuitive. With the help of Shakespeare, Noam Chomsky and some little green men, we will learn the dangers of prescriptive rules, and discover howreadable.com, an online scientific experiment that can help us write readable code.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5_IVZ1h0l84" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h3>The Nitty Gitty - demystifying git</h3>
     <cite>Wed 13th May 2020 - <a href="https://www.meetup.com/MEGABITES-Tech-Lunch-n-Learns/events/270359119/">Megabites Tech Lunch and Learns</a> (online)</cite>
     <p>People treat Git like it's a car, but really it's more like a skateboard. In this talk I attempt to demystify git by looking at how  Git works under the hood. We look at the basics of Git, its building blocks, its branch model and how to manipulate its history.</p>
